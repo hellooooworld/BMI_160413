@@ -65,7 +65,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         func conv(numString: String) -> Double? {
             let result : Double? = NSNumberFormatter().numberFromString(numString)?.doubleValue
             return result
-        }// End of conv
+        }// End of conv()
         
         if let txt = textField.text {
             switch(textField){
@@ -76,7 +76,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
             default:
                 print(" Something Wrong")
             }// End of switch
-            
             updateUI()
             
         }// End of if
